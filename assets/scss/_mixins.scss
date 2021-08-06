@@ -1,0 +1,42 @@
+@use "sass:math";
+
+//****************************************************************************
+// mixins
+
+@mixin gradient {
+    background: linear-gradient(
+        60deg,
+        $col1 00% 11%,
+        $col2 11% 22%,
+        $col3 22% 33%,
+        $col4 33% 44%,
+        $col1 44% 56%,
+        $col2 56% 67%,
+        $col3 67% 78%,
+        $col4 78% 89%,
+        $col1 89% 100%
+    );
+}
+
+// create a filled circle with centered content
+@mixin createColorCircle(
+    $dia,
+    $backgroundColor: inherit,
+    $fontsize: math.div($dia, 2),
+    $fontcolor: inherit
+) {
+    // the circle
+    width: $dia;
+    height: $dia;
+    border-radius: math.div($dia, 2);
+
+    // centered content
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // the text inside
+    background: $backgroundColor;
+    color: $fontcolor;
+    font-size: $fontsize;
+}

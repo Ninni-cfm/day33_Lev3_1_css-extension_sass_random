@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.home {
+  height: 100vh;
+  background: linear-gradient(60deg, #5bf2fd 0% 11%, #fcc736 11% 22%, #fd5f5f 22% 33%, #bb4dfa 33% 44%, #5bf2fd 44% 56%, #fcc736 56% 67%, #fd5f5f 67% 78%, #bb4dfa 78% 89%, #5bf2fd 89% 100%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.home header, .home .social {
+  padding: 20px 50px;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.home .content {
+  align-self: center;
+  text-align: center;
+  color: white;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.home .content h1 {
+  font-size: 10rem;
+}
+.home .content h2 {
+  font-size: 3rem;
+}
+.home .content .circle {
+  justify-self: end;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gold;
+  color: inherit;
+  font-size: 6rem;
+  font-weight: 700;
+  transform: translate(75%, 50%);
+}
+.home .social {
+  justify-self: end;
+  align-self: end;
+}
+.home .social ul {
+  display: flex;
+  list-style: none;
+}
+.home .social ul a {
+  color: black;
+  margin-right: 20px;
+}
+
+.about, .services {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+.about div, .services div {
+  width: 40%;
+}
+.about .image, .services .image {
+  display: inline-block;
+}
+.about .text, .services .text {
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+}
+.about .text h1, .services .text h1 {
+  padding: 0% 5%;
+  font-weight: 800;
+}
+.about .text p, .services .text p {
+  padding: 10% 5%;
+  text-align: justify;
+}
+.about button, .services button {
+  background: #fcc736;
+  border: none;
+  color: white;
+  padding: 2% 0%;
+  width: auto;
+  font-size: 1.4em;
+  font-weight: 800;
+}
+
+footer {
+  background: linear-gradient(60deg, #5bf2fd 0% 11%, #fcc736 11% 22%, #fd5f5f 22% 33%, #bb4dfa 33% 44%, #5bf2fd 44% 56%, #fcc736 56% 67%, #fd5f5f 67% 78%, #bb4dfa 78% 89%, #5bf2fd 89% 100%);
+  color: white;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

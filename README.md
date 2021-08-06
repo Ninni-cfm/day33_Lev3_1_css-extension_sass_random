@@ -1,15 +1,53 @@
 # day33_Lev3_1_css-extension_sass_random
 
-**Aufgabenstellung**
+<h2>Aufgabenstellung</h2>
 
-In dieser Übung werden wir "Variables" und "Nesting" verwenden. Erinnere dich an "linear-gradient".
+<br>
+Für dieses Projekt werden wir die Hauptfunktionen von Sass verwenden.
 
-Farbvariablen - Das Einstellen von Farbvariablen macht es einfach, Farben beim Prototyping und beim Erstellen deiner Website wiederzuverwenden, ohne sich an jeden einzelnen Hex-Farbcode oder HTML-Farbnamen zu erinnern.
+Unser Projekt wird aus 4 Abschnitten bestehen:
 
--   Schreibe den Code so, dass das Ergebnis wie auf der letzten Folie aussieht.
--   Verwende den Generator, um einen Hintergrund zu erstellen.
--   Schreibe Farben und linear-gradient als Variable an den Anfang in style.scss.
--   Benutze Nesting.
+-   Home
+-   About
+-   Services
+-   Footer
+
+Der Home-Bereich besteht aus:
+
+-   Ein Hintergrund (linear-gradient) mit mehreren Farben
+-   Socialmedia
+-   Content (h1+h2)
+
+Der About-Bereich besteht aus:
+
+-   Bild
+-   Content (h1+p+button)
+
+Der Services-Bereich besteht aus:
+
+-   Content (h1+p+button)
+-   Bild
+
+Der Footer-Bereich besteht aus:
+
+-   Ein Hintergrund (linear-gradient) mit mehreren Farben
+-   Content (p)
+
+**Hinweise**
+
+Das Projekt muss aus mehreren Dateien bestehen:
+
+-   index.html
+-   assets
+    -   scss
+        -   \_variables.scss
+        -   \_mixins.scss
+        -   style.scss
+    -   img
+
+<br>
+
+Gradient Stripes Generator http://stripesgenerator.com/
 
 <br>
 
